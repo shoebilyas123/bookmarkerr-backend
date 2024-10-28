@@ -8,7 +8,7 @@ export async function authorize(
   next: NextFunction
 ) {
   // 1) Getting token and check of it's there
-  let token;
+  let token: string;
   if (
     req.headers.authorization &&
     req.headers.authorization.startsWith('Bearer')
@@ -22,7 +22,7 @@ export async function authorize(
     return next(new Error(' log in to get access.'));
   }
 
-  // 2) Verification token
+  // 2) Verify the jwt and get the user id.
   const decoded = jwt.verify(
     token,
     process.env.JWT_SECRET as string

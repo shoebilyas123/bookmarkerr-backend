@@ -15,4 +15,9 @@ The `src` is the root folder that contains all the program logic and server code
 
 ### Architecture:
 
+The app is written in TypeScript and ExpressJS. Here are the list of libraries the server utilizes the following libraries
+
+- Server: [Express](https://expressjs.com/)
 - Form Validation: [Zod](zod.dev/)
+- Database: [MongoDB](https://www.mongodb.com/docs/manual/installation/)
+- Auth Token: [Json Web Token](https://jwt.io/introduction)
