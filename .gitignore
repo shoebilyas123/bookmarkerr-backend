@@ -1,0 +1,11 @@
+# Environment files
+.env
+.env.local
+.env.development
+.env.prod
+.env.production
+
+
+# Build and deps folders
+dist/
+node_modules/
